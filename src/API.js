@@ -12,12 +12,12 @@ export default {
     {
       slug: 'trending',
       title: 'Trending Now',
-      items: await basicFetch(`/trending/all/week&api_key=${API_KEY}`),
+      items: await basicFetch(`/trending/all/week?&api_key=${API_KEY}`),
     },
     {
       slug: 'toprated',
       title: 'Popular on Netflix',
-      items: await basicFetch(`/movie/top_rated&api_key=${API_KEY}`),
+      items: await basicFetch(`/movie/top_rated?&api_key=${API_KEY}`),
     },
     {
       slug: 'originals',
@@ -46,7 +46,7 @@ export default {
     },
     {
       slug: 'documentary',
-      title: 'Documentary;',
+      title: 'Documentary',
       items: await basicFetch(`/discover/movie?with_genres=99&api_key=${API_KEY}`),
     },
   ],
