@@ -20,7 +20,7 @@ function Featured({ item }) {
     >
       <div className="featured-Vertical">
         <div className="featured-Horizontal">
-          <div className="featured-Name">{item.original_name}</div>
+          <div className="featured-Name">{item.name}</div>
           <div className="featured-Info">
             <div className="featured-Score">
               {item.vote_average.toPrecision(2).replace('.', '')}
