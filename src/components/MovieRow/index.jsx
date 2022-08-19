@@ -24,10 +24,10 @@ function MovieRow({ title, items }) {
   return (
     <div className="movieRow">
       <h2>{title}</h2>
-      <div className="movieRow-Left">
+      <div className="movieRow-Left" onClick={handleLeftArrow}>
         <img src={LeftArrow} className="arrow" onClick={handleLeftArrow} />
       </div>
-      <div className="movieRow-Right">
+      <div className="movieRow-Right" onClick={handleRightArrow}>
         <img src={RightArrow} className="arrow" onClick={handleRightArrow} />
       </div>
       <div className="movieRow-ListArea">
