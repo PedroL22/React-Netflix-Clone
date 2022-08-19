@@ -60,11 +60,11 @@ function App() {
           <span className="heart">♥</span>
           {' '}
           by Pedro Lucena
-          <br />
-          <a href="https://netflix.com">Image rights for Netflix</a>
-          <br />
-          <a href="https://tmdb.org">Data taken from TMDB.org</a>
         </a>
+        <br />
+        <a href="https://netflix.com">Image rights for Netflix</a>
+        <br />
+        <a href="https://tmdb.org">Data taken from TMDB.org</a>
       </footer>
       {movieList.length <= 0 && (
         <div className="loading">
