@@ -93,12 +93,12 @@
 
 .lists {
 	margin-top: -150px;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 @media (max-width:768px) {
 	.featured {
-		height: 90vh;
+		height: 80vh;
 	}
 
 	.featured-Name {
@@ -125,6 +125,6 @@
 	}
 
 	.lists {
-		padding-top: 75px;
+		padding-top: 60px;
 	}
 }
