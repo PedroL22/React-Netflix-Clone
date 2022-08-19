@@ -93,4 +93,38 @@
 
 .lists {
 	margin-top: -150px;
+	padding-top: 50px;
+}
+
+@media (max-width:768px) {
+	.featured {
+		height: 90vh;
+	}
+
+	.featured-Name {
+		font-size: 40px;
+	}
+
+	.featured-Info {
+		font-size: 16px;
+	}
+
+	.featured-Description {
+		font-size: 14px;
+		max-width: 100%;
+		margin-right: 30px;
+	}
+
+	.featured-PlayButton,
+	.featured-InfoButton {
+		font-size: 16px;
+	}
+
+	.featured-Genres {
+		font-size: 14px;
+	}
+
+	.lists {
+		padding-top: 75px;
+	}
 }

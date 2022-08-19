@@ -4,7 +4,7 @@ import LeftArrow from '../../assets/images/left-arrow.png';
 import RightArrow from '../../assets/images/right-arrow.png';
 
 function MovieRow({ title, items }) {
-  const [scrollX, setScrollX] = useState(-400);
+  const [scrollX, setScrollX] = useState(0);
   const handleLeftArrow = () => {
     let x = scrollX + Math.round(window.innerWidth / 2);
     if (x > 0) {

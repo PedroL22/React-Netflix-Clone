@@ -8,7 +8,7 @@ import Header from './components/Header';
 function App() {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
-  const [darkHeader, setDarkHeader] = useState(true);
+  const [darkHeader, setDarkHeader] = useState(false);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -66,6 +66,11 @@ function App() {
           <a href="https://tmdb.org">Data taken from TMDB.org</a>
         </a>
       </footer>
+      {movieList.length <= 0 && (
+        <div className="loading">
+          <img src="https://www.rchandru.com/images/portfolio/loading.gif" alt="Loading" />
+        </div>
+      )}
     </div>
   );
 }
